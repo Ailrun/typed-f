@@ -1,6 +1,6 @@
 {
   "name": "@typed-f/maybe",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "keywords": [
     "Maybe",
     "Option",
@@ -27,10 +27,10 @@
     "watch": "tsc -w -p ./tsconfig.json"
   },
   "dependencies": {
-    "@typed-f/function": "^0.0.0",
-    "@typed-f/matchable": "^0.0.0",
-    "@typed-f/monad": "^0.0.0",
-    "@typed-f/setoid": "^0.0.0"
+    "@typed-f/function": "^0.0.1",
+    "@typed-f/matchable": "^0.0.1",
+    "@typed-f/monad": "^0.0.1",
+    "@typed-f/setoid": "^0.0.1"
   },
   "devDependencies": {
     "typescript": "^3.0.1"

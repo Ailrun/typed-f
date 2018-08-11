@@ -1,6 +1,6 @@
 {
   "name": "@typed-f/functor",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "keywords": [
     "Functor",
     "TypeScript",
@@ -25,7 +25,7 @@
     "watch": "tsc -w -p ./tsconfig.json"
   },
   "dependencies": {
-    "@typed-f/function": "^0.0.0"
+    "@typed-f/function": "^0.0.1"
   },
   "devDependencies": {
     "typescript": "^3.0.1"
