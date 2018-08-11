@@ -24,6 +24,7 @@ module.exports = {
         'functor',
         'applicative',
         'monad',
+        'setoid',
       ],
     ],
     'scope-empty': [
