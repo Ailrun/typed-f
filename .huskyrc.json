@@ -1,0 +1,5 @@
+{
+  "hooks": {
+    "commit-msg": "commitlint -g ./config/commitlint/commitlint.config.js -E HUSKY_GIT_PARAMS"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "declaration": true,
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "ES7"
+    ],
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "newLine": "lf",
+    "noEmitOnError": true,
+    "noErrorTruncation": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "preserveWatchOutput": true,
+    "pretty": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "strictNullChecks": true,
+    "target": "ES5",
+    "types": []
+  }
+}

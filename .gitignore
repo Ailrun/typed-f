@@ -1,0 +1,37 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# nyc test coverage
+.nyc_output
+
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
+
+# built distribution
+dist/
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Output of 'npm pack'
+*.tgz
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+
+# Emacs directory local setting file
+.dir-locals.el

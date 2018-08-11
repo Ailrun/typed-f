@@ -1,0 +1,60 @@
+{
+  "extends": "./tslint.base.json",
+  "rules": {
+    "no-import-side-effect": {
+      "severity": "off"
+    },
+    "no-inferrable-types": {
+      "severity": "off"
+    },
+    "no-magic-numbers": {
+      "severity": "off"
+    },
+    "no-non-null-assertion": {
+      "severity": "off"
+    },
+
+    "import-blacklist": {
+      "severity": "off"
+    },
+    "no-dynamic-delete": {
+      "severity": "off"
+    },
+    "no-implicit-dependencies": {
+      "severity": "error",
+      "options": [
+        "dev",
+        ["$"]
+      ]
+    },
+    "no-invalid-this": {
+      "severity": "off"
+    },
+    "no-shadowed-variable": {
+      "severity": "off"
+    },
+    "no-submodule-imports": {
+      "severity": "warning",
+      "options": [
+        "$"
+      ]
+    },
+    "strict-type-predicates": {
+      "severity": "off"
+    },
+
+    "max-file-line-count": {
+      "severity": "off"
+    },
+    "max-line-length": {
+      "severity": "off"
+    },
+    "no-require-imports": {
+      "severity": "off"
+    },
+
+    "file-header": {
+      "severity": "off"
+    }
+  }
+}

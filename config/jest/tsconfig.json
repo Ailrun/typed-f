@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "baseUrl": "../../",
+    "declaration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "DOM",
+      "ES7"
+    ],
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "newLine": "lf",
+    "noEmitOnError": true,
+    "noErrorTruncation": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "./dist/",
+    "pretty": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "strictNullChecks": true,
+    "target": "ES6",
+    "types": ["node"]
+  },
+  "include": [
+    "../../src"
+  ]
+}

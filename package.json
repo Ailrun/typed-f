@@ -1,0 +1,33 @@
+{
+  "name": "@typed-f/repo",
+  "version": "0.0.0",
+  "keywords": [
+    "Functional Programming",
+    "TypeScript",
+    "Functional",
+    "Utilities"
+  ],
+  "homepage": "https://github.com/Ailrun/typed-f#readme",
+  "bugs": "https://github.com/Ailrun/typed-f/issues",
+  "author": {
+    "name": "Junyoung Clare Jang",
+    "email": "jjc9310@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ailrun/typed-f.git"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap --hoist",
+    "build": "lerna run build --",
+    "watch": "lerna run --stream --parallel watch --"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "husky": "^1.0.0-rc.13",
+    "lerna": "^3.0.0-rc.0"
+  },
+  "peerDependencies": {},
+  "private": true
+}
