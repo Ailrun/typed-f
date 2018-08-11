@@ -23,6 +23,7 @@ module.exports = {
         'function',
         'functor',
         'applicative',
+        'monad',
       ],
     ],
     'scope-empty': [
