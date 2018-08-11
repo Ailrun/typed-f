@@ -22,6 +22,7 @@ module.exports = {
         'test',
         'function',
         'functor',
+        'applicative',
       ],
     ],
     'scope-empty': [
