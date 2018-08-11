@@ -20,6 +20,7 @@ module.exports = {
         'repo',
         'package',
         'test',
+        'function',
       ],
     ],
     'scope-empty': [

@@ -1,0 +1,35 @@
+{
+  "name": "@typed-f/function",
+  "version": "0.0.0",
+  "keywords": [
+    "Utility",
+    "Function",
+    "TypeScript",
+    "Strong type",
+    "Functional",
+    "Functional Programming"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Ailrun/typed-f#readme",
+  "bugs": "https://github.com/Ailrun/typed-f/issues",
+  "author": {
+    "name": "Junyoung Clare Jang",
+    "email": "jjc9310@gmail.com"
+  },
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ailrun/typed-f.git"
+  },
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json",
+    "watch": "tsc -w -p ./tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "^3.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "de9bba943a99c664fddc2e4e26f573e9ceaa87a2"
+}
