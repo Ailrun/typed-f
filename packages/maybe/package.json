@@ -1,0 +1,42 @@
+{
+  "name": "@typed-f/maybe",
+  "version": "0.0.0",
+  "keywords": [
+    "Maybe",
+    "Option",
+    "Monad",
+    "TypeScript",
+    "Strong type",
+    "Functional",
+    "Functional Programming"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Ailrun/typed-f#readme",
+  "bugs": "https://github.com/Ailrun/typed-f/issues",
+  "author": {
+    "name": "Junyoung Clare Jang",
+    "email": "jjc9310@gmail.com"
+  },
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ailrun/typed-f.git"
+  },
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json",
+    "watch": "tsc -w -p ./tsconfig.json"
+  },
+  "dependencies": {
+    "@typed-f/function": "^0.0.0",
+    "@typed-f/matchable": "^0.0.0",
+    "@typed-f/monad": "^0.0.0",
+    "@typed-f/setoid": "^0.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "de9bba943a99c664fddc2e4e26f573e9ceaa87a2"
+}

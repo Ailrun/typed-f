@@ -26,6 +26,7 @@ module.exports = {
         'monad',
         'setoid',
         'matchable',
+        'maybe',
       ],
     ],
     'scope-empty': [
