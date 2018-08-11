@@ -1,7 +1,17 @@
 {
-  "lerna": "3.0.0-rc.0",
+  "version": "0.0.0",
+  "command": {
+    "publish": {
+      "allowBranch": "master",
+      "conventionalCommits": true,
+      "ignoreChanges": [
+        "**/tests/**"
+      ],
+      "message": "chore(package): release %s",
+      "signGitCommit": true
+    }
+  },
   "packages": [
     "packages/*"
-  ],
-  "version": "0.0.0"
+  ]
 }
