@@ -21,6 +21,7 @@
     "url": "git+https://github.com/Ailrun/typed-f.git"
   },
   "scripts": {
+    "clean": "rimraf dist",
     "build": "tsc -p ./tsconfig.json",
     "watch": "tsc -w -p ./tsconfig.json"
   },
@@ -28,6 +29,7 @@
     "@typed-f/function": "^0.0.1"
   },
   "devDependencies": {
+    "rimraf": "^2.6.2",
     "typescript": "^3.0.1"
   },
   "publishConfig": {
