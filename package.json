@@ -19,6 +19,7 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist",
+    "clean": "lerna run --parallel clean --",
     "build": "lerna run build --",
     "watch": "lerna run --stream --parallel watch --"
   },
