@@ -1,22 +1,15 @@
-export interface Tag1List<_T> {
-}
+export interface Tag1List<_A0> {}
+export interface Tag2List<_A0, _A1> {}
+export interface Tag3List<_A0, _A1, _A2> {}
+export interface Tag4List<_A0, _A1, _A2, _A3> {}
 
-export interface Tag2List<_T, _U> {
-}
-
-export interface Tag3List<_T, _U, _V> {
-}
-
-export interface Tag4List<_T, _U, _V, _W> {
-}
-
-export type Tags<T> =
-  | keyof Tag1List<T>
-  | keyof Tag2List<T, any>
-  | keyof Tag3List<T, any, any>
-  | keyof Tag4List<T, any, any, any>
+export type Tags =
+  | keyof Tag1List<any>
+  | keyof Tag2List<any, any>
+  | keyof Tag3List<any, any, any>
+  | keyof Tag4List<any, any, any, any>
   ;
 
-export interface Tagged<Tag extends Tags<any>> {
+export interface Tagged<Tag extends Tags> {
   __typed_f__tag__: Tag;
 }
