@@ -25,7 +25,9 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc -p ./tsconfig.json",
-    "watch": "tsc -w -p ./tsconfig.json"
+    "watch": "tsc -w -p ./tsconfig.json",
+    "test:behaviour": "jest",
+    "test:behaviour:coverage": "jest --collectCoverage"
   },
   "dependencies": {
     "@typed-f/function": "^0.1.0",
