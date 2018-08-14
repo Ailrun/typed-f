@@ -1,6 +1,6 @@
 {
   "name": "@typed-f/matchable",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "keywords": [
     "Functor",
     "TypeScript",
@@ -26,7 +26,7 @@
     "watch": "tsc -w -p ./tsconfig.json"
   },
   "dependencies": {
-    "@typed-f/function": "^0.0.1"
+    "@typed-f/function": "^0.1.0"
   },
   "devDependencies": {
     "rimraf": "^2.6.2",

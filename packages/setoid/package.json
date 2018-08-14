@@ -1,6 +1,6 @@
 {
   "name": "@typed-f/setoid",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "keywords": [
     "Setoid",
     "Equality",
@@ -27,7 +27,7 @@
     "watch": "tsc -w -p ./tsconfig.json"
   },
   "dependencies": {
-    "@typed-f/tagged": "^0.0.1"
+    "@typed-f/tagged": "^0.1.0"
   },
   "devDependencies": {
     "rimraf": "^2.6.2",
