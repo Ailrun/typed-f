@@ -1,9 +1,9 @@
 {
-  "name": "@typed-f/applicative",
+  "name": "@typed-f/tagged",
   "version": "0.0.1",
   "keywords": [
-    "Functor",
-    "Applicative",
+    "Type class",
+    "Higher order type",
     "TypeScript",
     "Strong type",
     "Functional",
@@ -25,11 +25,6 @@
     "clean": "rimraf dist",
     "build": "tsc -p ./tsconfig.json",
     "watch": "tsc -w -p ./tsconfig.json"
-  },
-  "dependencies": {
-    "@typed-f/function": "^0.0.1",
-    "@typed-f/functor": "^0.0.1",
-    "@typed-f/tagged": "^0.0.1"
   },
   "devDependencies": {
     "rimraf": "^2.6.2",

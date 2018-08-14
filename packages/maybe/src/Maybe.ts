@@ -1,14 +1,24 @@
 import { Fun } from '@typed-f/function';
 import { MatchPatterns, Matchable } from '@typed-f/matchable';
-import { Monad } from '@typed-f/monad';
-import { Setoid } from '@typed-f/setoid';
+import { Monad1 } from '@typed-f/monad';
+import { Setoid1 } from '@typed-f/setoid';
+
+type MaybeTag = '__typed_f__Maybe__';
+const MaybeTag: MaybeTag = '__typed_f__Maybe__';
+
+declare module '@typed-f/tagged' {
+  export interface Tag1List<T> {
+    [MaybeTag]: Maybe<T>;
+  }
+}
 
 export interface MaybePatterns<T, U> extends MatchPatterns<U> {
   just(v: T): U;
   nothing(): U;
 }
 
-abstract class BaseMaybe<T> implements Matchable, Setoid<T>, Monad<T> {
+abstract class BaseMaybe<T> implements Matchable, Setoid1<MaybeTag>, Monad1<MaybeTag, T> {
+  public __typed_f__tag__: MaybeTag = MaybeTag;
   protected abstract _kind: Maybe.Kind;
 
   public abstract isJust(): this is Just<T>;
@@ -18,13 +28,13 @@ abstract class BaseMaybe<T> implements Matchable, Setoid<T>, Monad<T> {
   public abstract valueOrCompute(f: Fun<[], T>): T;
 
   public abstract matchWith<U>(cases: MaybePatterns<T, U>): U;
-  public abstract equals<U>(other: Maybe<U>): boolean;
+  public abstract equals(other: Maybe<any>): boolean;
   public abstract map<U>(f: Fun<[T], U>): Maybe<U>;
   public abstract ap<U>(f: Maybe<Fun<[T], U>>): Maybe<U>;
   public abstract bind<U>(f: Fun<[T], Maybe<U>>): Maybe<U>;
 
   public caseOf = this.matchWith;
-  public notEquals<U>(other: Maybe<U>): boolean {
+  public notEquals(other: Maybe<any>): boolean {
     return !this.equals(other);
   }
   public lift = this.map;
@@ -58,7 +68,7 @@ export class Nothing<T> extends BaseMaybe<T> {
   public matchWith<U>(cases: MaybePatterns<T, U>): U {
     return cases.nothing();
   }
-  public equals<U>(other: Maybe<U>): boolean {
+  public equals(other: Maybe<any>): boolean {
     return other instanceof BaseMaybe && other.isNothing();
   }
 
@@ -109,7 +119,7 @@ export class Just<T> extends BaseMaybe<T> {
    * @todo
    * Should be tested with something like `Maybe<Maybe<number>>`
    */
-  public equals<U>(other: Maybe<U>): boolean {
+  public equals(other: Maybe<any>): boolean {
     if (!(other instanceof BaseMaybe) ||
         !other.isJust()) {
       return false;

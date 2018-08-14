@@ -26,7 +26,8 @@
     "watch": "tsc -w -p ./tsconfig.json"
   },
   "dependencies": {
-    "@typed-f/function": "^0.0.1"
+    "@typed-f/function": "^0.0.1",
+    "@typed-f/tagged": "^0.0.1"
   },
   "devDependencies": {
     "rimraf": "^2.6.2",

@@ -27,6 +27,7 @@ module.exports = {
         'setoid',
         'matchable',
         'maybe',
+        'tagged',
       ],
     ],
     'scope-empty': [

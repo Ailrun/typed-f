@@ -14,3 +14,4 @@ Well typed FP utilities for TypeScript
 - @typed-f/functor
 - @typed-f/applicative
 - @typed-f/monad
+- @typed-f/tagged
