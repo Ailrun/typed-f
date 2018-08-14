@@ -25,7 +25,8 @@
     "watch": "tsc -w -p ./tsconfig.json"
   },
   "dependencies": {
-    "@typed-f/function": "^0.0.1"
+    "@typed-f/function": "^0.0.1",
+    "@typed-f/tagged": "^0.0.1"
   },
   "devDependencies": {
     "typescript": "^3.0.1"

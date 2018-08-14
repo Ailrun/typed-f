@@ -25,6 +25,9 @@
     "build": "tsc -p ./tsconfig.json",
     "watch": "tsc -w -p ./tsconfig.json"
   },
+  "dependencies": {
+    "@typed-f/tagged": "^0.0.1"
+  },
   "devDependencies": {
     "typescript": "^3.0.1"
   },

@@ -27,7 +27,8 @@
   },
   "dependencies": {
     "@typed-f/function": "^0.0.1",
-    "@typed-f/functor": "^0.0.1"
+    "@typed-f/functor": "^0.0.1",
+    "@typed-f/tagged": "^0.0.1"
   },
   "devDependencies": {
     "typescript": "^3.0.1"
