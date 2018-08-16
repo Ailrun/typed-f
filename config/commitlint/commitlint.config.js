@@ -28,6 +28,7 @@ module.exports = {
         'matchable',
         'maybe',
         'tagged',
+        'either',
       ],
     ],
     'scope-empty': [
