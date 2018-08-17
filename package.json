@@ -23,7 +23,8 @@
     "build": "lerna run build --",
     "watch": "lerna run --stream --parallel watch --",
     "test": "run-s test:*",
-    "test:behaviour": "lerna run --stream test:behaviour"
+    "test:behaviour": "lerna run --stream test:behaviour",
+    "test:lint": "lerna run --stream test:lint"
   },
   "dependencies": {},
   "devDependencies": {

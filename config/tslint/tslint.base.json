@@ -324,10 +324,7 @@
       ]
     },
     "max-classes-per-file": {
-      "severity": "warning",
-      "options": [
-        2
-      ]
+      "severity": "off"
     },
     "max-file-line-count": {
       "severity": "warning",

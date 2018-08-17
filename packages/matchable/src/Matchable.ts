@@ -1,3 +1,6 @@
+/*
+ * Copyright 2018-present Junyoung Clare Jang
+ */
 import { Fun } from '@typed-f/function';
 
 export interface MatchPatterns<U> {

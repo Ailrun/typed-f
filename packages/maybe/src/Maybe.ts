@@ -1,3 +1,6 @@
+/*
+ * Copyright 2018-present Junyoung Clare Jang
+ */
 import { Fun } from '@typed-f/function';
 import { MatchPatterns, Matchable } from '@typed-f/matchable';
 import { Monad1 } from '@typed-f/monad';
@@ -17,7 +20,9 @@ export interface MaybePatterns<T, U> extends MatchPatterns<U> {
   nothing(): U;
 }
 
+//tslint:disable-next-line: max-line-length
 abstract class BaseMaybe<T> implements Matchable, Setoid1<MaybeTag>, Monad1<MaybeTag, T> {
+  //tslint:disable-next-line: variable-name
   public __typed_f__tag__: MaybeTag = MaybeTag;
   protected abstract _kind: Maybe.Kind;
 
@@ -126,12 +131,12 @@ export class Just<T> extends BaseMaybe<T> {
     }
 
     if (typeof this._value === 'object' &&
-        this._value != null &&
+        this._value != undefined &&
         typeof (this._value as any).equals === 'function') {
       return (this._value as any).equals(other.value);
     }
 
-    return this._value === (other.value as any);
+    return this._value === other._value;
   }
   public map<U>(f: Fun<[T], U>): Maybe<U> {
     return new Just(f(this._value));
@@ -167,7 +172,7 @@ export namespace Maybe {
   export function from<T>(value: T): Just<T>;
   export function from<T>(value?: null): Nothing<T>;
   export function from<T>(value?: T | null): Maybe<T> {
-    if (value == null) {
+    if (value == undefined) {
       return new Nothing();
     }
 
@@ -180,17 +185,21 @@ export namespace Maybe {
     return from<T>(value as any);
   }
 
-  export function sequenceObject<O>(obj: { [K in keyof O]: Maybe<O[K]> }): Maybe<O> {
+  export function sequenceObject<O extends object>(
+    obj: { [K in keyof O]: Maybe<O[K]> },
+  ): Maybe<O> {
     const entries = (Object.keys(obj) as (keyof O)[])
       .map((key): [keyof O, Maybe<O[keyof O]>] => [key, obj[key]]);
-    
+
     if (entries.filter(([, value]) => value.isNothing()).length) {
       return new Nothing();
     }
 
     const result = entries
-      .filter((pair): pair is [keyof O, Just<O[keyof O]>] => !pair[1].isNothing())
-      .reduce((acc, [key, { value }]) => {
+      .filter((pair): pair is [keyof O, Just<O[keyof O]>] => {
+        return !pair[1].isNothing();
+      })
+      .reduce<{}>((acc, [key, { value }]) => {
         return {
           ...acc,
           [key]: value,

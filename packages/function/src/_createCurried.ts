@@ -1,6 +1,12 @@
+/*
+ * Copyright 2018-present Junyoung Clare Jang
+ */
 import { Fun } from './';
 
-export function _createCurried<F extends Fun>(f: F, arity: number, args: any[]) {
+export function _createCurried<F extends Fun>(
+  f: F, arity: number,
+  args: any[],
+) {
   function curried(this: any) {
     const length = arguments.length;
 
