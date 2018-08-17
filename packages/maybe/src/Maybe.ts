@@ -200,6 +200,10 @@ export namespace Maybe {
     return new Just(result);
   }
 
+  /**
+   * @fixme
+   * This should work well with tuples
+   */
   export function sequenceArray<T>(array: Maybe<T>[]): Maybe<T[]> {
     return array.reduce((acc: Maybe<T[]>, mayv) => {
       return acc.ap(mayv.map((v) => (arr: T[]) => [...arr, v]));
