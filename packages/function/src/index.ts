@@ -3,4 +3,5 @@
  */
 export * from './types';
 export * from './id';
+export * from './compose';
 export * from './curry';
