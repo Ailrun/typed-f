@@ -21,13 +21,16 @@
     "bootstrap": "lerna bootstrap --hoist",
     "clean": "lerna run --parallel clean --",
     "build": "lerna run build --",
-    "watch": "lerna run --stream --parallel watch --"
+    "watch": "lerna run --stream --parallel watch --",
+    "test": "run-s test:*",
+    "test:behaviour": "lerna run --stream test:behaviour"
   },
   "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
     "husky": "^1.0.0-rc.13",
-    "lerna": "^3.0.0-rc.0"
+    "lerna": "^3.0.0-rc.0",
+    "npm-run-all": "^4.1.3"
   },
   "peerDependencies": {},
   "private": true
