@@ -1,3 +1,6 @@
+/*
+ * Copyright 2018-present Junyoung Clare Jang
+ */
 import { Fun } from '@typed-f/function';
 import * as T from '@typed-f/tagged';
 
@@ -25,25 +28,35 @@ type F2M<Tag extends keyof T.Tag2List<any, any>, A0, A1> = <R>(
 type F3M<Tag extends keyof T.Tag3List<any, any, any>, A0, A1, A2> = <R>(
   f: Fun<[A2], R>,
 ) => T.Tag3List<A0, A1, R>[Tag];
+//tslint:disable-next-line: max-line-length
 type F4M<Tag extends keyof T.Tag4List<any, any, any, any>, A0, A1, A2, A3> = <R>(
   f: Fun<[A3], R>,
 ) => T.Tag4List<A0, A1, A2, R>[Tag];
 
-export interface Functor1<Tag extends keyof T.Tag1List<any>, A0> extends T.Tagged<Tag>, FB<F1M<Tag, A0>> {}
-export interface Functor2<Tag extends keyof T.Tag2List<any, any>, A0, A1> extends T.Tagged<Tag>, FB<F2M<Tag, A0, A1>> {}
-export interface Functor3<Tag extends keyof T.Tag3List<any, any, any>, A0, A1, A2> extends T.Tagged<Tag>, FB<F3M<Tag, A0, A1, A2>> {}
-export interface Functor4<Tag extends keyof T.Tag4List<any, any, any, any>, A0, A1, A2, A3> extends T.Tagged<Tag>, FB<F4M<Tag, A0, A1, A2, A3>> {}
+export interface Functor1<Tag extends keyof T.Tag1List<any>, A0>
+  extends T.Tagged<Tag>, FB<F1M<Tag, A0>> {}
+export interface Functor2<Tag extends keyof T.Tag2List<any, any>, A0, A1>
+  extends T.Tagged<Tag>, FB<F2M<Tag, A0, A1>> {}
+//tslint:disable-next-line: max-line-length
+export interface Functor3<Tag extends keyof T.Tag3List<any, any, any>, A0, A1, A2>
+  extends T.Tagged<Tag>, FB<F3M<Tag, A0, A1, A2>> {}
+//tslint:disable-next-line: max-line-length
+export interface Functor4<Tag extends keyof T.Tag4List<any, any, any, any>, A0, A1, A2, A3>
+  extends T.Tagged<Tag>, FB<F4M<Tag, A0, A1, A2, A3>> {}
 
 export namespace Functor {
-  export function map<T, U>(f: Fun<[T], U>): <Tag extends keyof T.Tag1List<any>>(
-    wa: Functor1<Tag, T>,
+  export function map<V, U>(
+    f: Fun<[V], U>,
+  ): <Tag extends keyof T.Tag1List<any>>(
+    wa: Functor1<Tag, V>,
   ) => T.Tag1List<U>[Tag] {
     return function (wa) {
       if ('map' in wa) {
         return (wa as any).map(f);
       }
 
+      //tslint:disable-next-line: max-line-length
       throw new Error('Parameter is not a functor. You cannot call the function map with non-functor.');
-    }
+    };
   }
 }

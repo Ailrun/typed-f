@@ -1,3 +1,6 @@
+/*
+ * Copyright 2018-present Junyoung Clare Jang
+ */
 import { Fun } from '@typed-f/function';
 import { MatchPatterns, Matchable } from '@typed-f/matchable';
 import { Monad2 } from '@typed-f/monad';
@@ -17,7 +20,9 @@ export interface EitherPatterns<L, R, U> extends MatchPatterns<U> {
   right(r: R): U;
 }
 
+//tslint:disable-next-line: max-line-length
 abstract class BaseEither<L, R> implements Matchable, Setoid2<EitherTag>, Monad2<EitherTag, L, R> {
+  //tslint:disable-next-line: variable-name
   public __typed_f__tag__: EitherTag = EitherTag;
   protected abstract _kind: Either.Kind;
 
@@ -97,7 +102,7 @@ export class Left<L, R> extends BaseEither<L, R> {
     }
 
     if (typeof this._value === 'object' &&
-        this._value != null &&
+        this._value != undefined &&
         typeof (this._value as any).equals === 'function') {
       return (this._value as any).equals(other._value);
     }
@@ -164,7 +169,7 @@ export class Right<L, R> extends BaseEither<L, R> {
     }
 
     if (typeof this._value === 'object' &&
-        this._value != null &&
+        this._value != undefined &&
         typeof (this._value as any).equals === 'function') {
       return (this._value as any).equals(other._value);
     }
@@ -203,17 +208,22 @@ export namespace Either {
   }
   export const of = unit;
 
-  export function sequenceObject<L, O>(obj: { [K in keyof O]: Either<L, O[K]> }): Either<L, O> {
+  export function sequenceObject<L, O extends object>(
+    obj: { [K in keyof O]: Either<L, O[K]> },
+  ): Either<L, O> {
     const entries = (Object.keys(obj) as (keyof O)[])
       .map((key): [keyof O, Either<L, O[keyof O]>] => [key, obj[key]]);
-    const leftEntries = entries.filter((entry): entry is [keyof O, Left<L, any>] => entry[1].isLeft());
+    const leftEntries = entries
+      .filter((entry): entry is [keyof O, Left<L, any>] => entry[1].isLeft());
 
     if (leftEntries.length > 0) {
       return new Left(leftEntries[0][1].value);
     }
 
     const result = entries
-      .filter((entry): entry is [keyof O, Right<L, O[keyof O]>] => !entry[1].isLeft())
+      .filter((entry): entry is [keyof O, Right<L, O[keyof O]>] => {
+        return !entry[1].isLeft();
+      })
       .reduce((acc, [key, { value }]) => {
         return {
           ...acc,
@@ -230,7 +240,9 @@ export namespace Either {
     }, new Right([]));
   }
 
-  export function map<L, R, U>(f: Fun<[R], U>): Fun<[Either<L, R>], Either<L, U>> {
+  export function map<L, R, U>(
+    f: Fun<[R], U>,
+  ): Fun<[Either<L, R>], Either<L, U>> {
     return function (eitherv) {
       return eitherv.map(f);
     };
