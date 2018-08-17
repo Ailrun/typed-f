@@ -1,21 +1,22 @@
-module.exports = {
+module.exports = ({ name }) => ({
   errorOnDeprecated: true,
   globals: {
     'ts-jest': {
-      tsConfigFile: './config/tsconfig/tsconfig.test.json',
+      tsConfigFile: './tsconfig.json',
     },
   },
   moduleFileExtensions: [
     'js', 'jsx', 'json', 'ts', 'tsx',
   ],
   moduleNameMapper: {
-    '\\$/(.*)': '<rootDir>/src/$1',
+    [`${name}`]: '<rootDir>/src',
+    [`${name}/dist/(.*)`]: '<rootDir>/src/$1',
   },
-  rootDir: '../../',
+  rootDir: '.',
   testMatch: [
-    '<rootDir>/test/behaviour/**/*.test.ts',
+    '<rootDir>/tests/**/*.test.ts',
   ],
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
   },
-};
+});

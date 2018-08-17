@@ -48,7 +48,16 @@ export type CurriedFun<F extends Function> =
   & CurriedFun4<F>
   ;
 
-export function curry<F extends Fun>(f: F, arity?: F extends Fun<infer A> ? A['length'] : number): CurriedFun<F> {
+/**
+ * @todo
+ * Return valid type for few arities like 0, 1, 2, 3, 4, 5, 6
+ * (We cannot give valid type for all arities since
+ * there is no type arithematic operators for literal type).
+ */
+export function curry<F extends Fun>(
+  f: F,
+  arity?: F extends Fun<infer A> ? A['length'] : number,
+): CurriedFun<F> {
   arity = arity !== undefined ? arity : (f.length as F extends Fun<infer A> ? A['length'] : number);
 
   return _createCurried(f, arity, []) as any;
