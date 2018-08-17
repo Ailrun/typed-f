@@ -3,5 +3,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "./dist"
-  }
+  },
+  "include": [
+    "./src"
+  ]
 }
