@@ -8,7 +8,7 @@ jobs:
       - run: npm --version
       - run:
           name: update-npm
-          command: npm install -g npm
+          command: sudo npm install -g npm
       - run: npm --version
       - restore_cache:
           key: dependency-cache-{{ checksum "package-lock.json" }}
@@ -33,7 +33,7 @@ jobs:
       - run: npm --version
       - run:
           name: update-npm
-          command: npm install -g npm
+          command: sudo npm install -g npm
       - run: npm --version
       - restore_cache:
           key: dependency-cache-{{ checksum "package-lock.json" }}
