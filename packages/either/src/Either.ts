@@ -224,7 +224,7 @@ export namespace Either {
       .filter((entry): entry is [keyof O, Right<L, O[keyof O]>] => {
         return !entry[1].isLeft();
       })
-      .reduce((acc, [key, { value }]) => {
+      .reduce<{}>((acc, [key, { value }]) => {
         return {
           ...acc,
           [key]: value,
