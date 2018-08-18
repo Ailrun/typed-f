@@ -217,7 +217,10 @@
       "severity": "error"
     },
     "no-submodule-imports": {
-      "severity": "warning"
+      "severity": "warning",
+      "options": [
+        "@typed-f"
+      ]
     },
     "no-switch-case-fall-through": {
       "severity": "error"

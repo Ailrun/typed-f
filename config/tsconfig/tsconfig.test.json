@@ -1,9 +1,6 @@
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "lib": [
-      "ES7"
-    ],
     "noImplicitAny": false,
     "noImplicitReturns": false,
     "noImplicitThis": false,
