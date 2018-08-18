@@ -69,8 +69,13 @@ describe('Either', () => {
         ]));
       });
 
-      it('should ', () => {
-        
+      it('should return a Left of first Left when input includes more than one Lefts', () => {
+        expect(sequenceArray<string, number>([
+          new Right(4),
+          new Right(54),
+          new Left('Too small'),
+          new Right(1),
+        ])).toEqual(new Left<string, number>('Too small'));
       });
     });
   });
