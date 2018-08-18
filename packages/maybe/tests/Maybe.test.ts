@@ -59,20 +59,20 @@ describe('Maybe', () => {
       it('should return a Nothing when input is an object with more than one Nothings', () => {
         expect(sequenceObject({
           kind: new Just('string'),
-          value: new Nothing(),
-        })).toEqual(new Nothing());
+          value: new Nothing<any>(),
+        })).toEqual(new Nothing<any>());
 
         expect(sequenceObject({
           kind: new Just('string'),
-          value: new Nothing(),
+          value: new Nothing<any>(),
           size: new Just(4),
-        })).toEqual(new Nothing());
+        })).toEqual(new Nothing<any>());
 
         expect(sequenceObject({
           obj: new Just({ a: 'num' }),
-          access: new Nothing(),
-          permission: new Nothing(),
-        })).toEqual(new Nothing());
+          access: new Nothing<any>(),
+          permission: new Nothing<any>(),
+        })).toEqual(new Nothing<any>());
       });
     });
 
@@ -105,14 +105,14 @@ describe('Maybe', () => {
         expect(sequenceArray<string | number>([
           new Just('4'),
           new Just(5),
-          new Nothing(),
-        ])).toEqual(new Nothing());
+          new Nothing<any>(),
+        ])).toEqual(new Nothing<any>());
 
         expect(sequenceArray<string | RegExp>([
-          new Nothing(),
+          new Nothing<any>(),
           new Just('abed'),
           new Just(/.*/),
-        ])).toEqual(new Nothing());
+        ])).toEqual(new Nothing<any>());
       });
     });
 
@@ -130,9 +130,9 @@ describe('Maybe', () => {
       });
 
       it('should map nothing to nothing', () => {
-        expect(map((x: number) => x + 1)(new Nothing())).toEqual(new Nothing());
+        expect(map((x: number) => x + 1)(new Nothing<any>())).toEqual(new Nothing<any>());
 
-        expect(map((str: string) => str.toUpperCase())(new Nothing())).toEqual(new Nothing());
+        expect(map((str: string) => str.toUpperCase())(new Nothing<any>())).toEqual(new Nothing<any>());
       });
     });
   });

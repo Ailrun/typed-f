@@ -23,8 +23,7 @@
     "no-implicit-dependencies": {
       "severity": "error",
       "options": [
-        "dev",
-        ["$"]
+        "dev"
       ]
     },
     "no-invalid-this": {
@@ -32,12 +31,6 @@
     },
     "no-shadowed-variable": {
       "severity": "off"
-    },
-    "no-submodule-imports": {
-      "severity": "warning",
-      "options": [
-        "$"
-      ]
     },
     "strict-type-predicates": {
       "severity": "off"

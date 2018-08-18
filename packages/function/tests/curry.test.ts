@@ -17,7 +17,8 @@ describe('curry', () => {
     curry(testFn1)()()()()(/hi/);
     expect(testFn1).toHaveBeenLastCalledWith(/hi/);
 
-    const testFn2: Fun<[object[], Date], Promise<string>> = jest.fn((a, b) => Promise.resolve(''));
+    const testFn2: Fun<[object[], Date], Promise<string>> = jest.fn(async (a, b) => '');
+    //tslint:disable-next-line: no-floating-promises
     curry(testFn2)()([{ hi: 'world', answer: 42 }, { result: false }])()()()(new Date(20));
     expect(testFn2).toHaveBeenLastCalledWith([{ hi: 'world', answer: 42 }, { result: false }], new Date(20));
   });
