@@ -19,6 +19,10 @@ npm i -S @typed-f/either
 
 ## Description
 
+### Why do we need `Either` (Disjoint union type)?
+
+See [this document](https://github.com/Ailrun/typed-f/tree/master/docs/why-do-we-need-either.md).
+
 ### APIs
 
 This package includes type definition for `Either` type, which is an union type of `Right` and `Left`.
