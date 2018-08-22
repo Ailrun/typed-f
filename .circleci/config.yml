@@ -11,7 +11,10 @@ jobs:
           command: sudo npm install -g npm
       - run: npm --version
       - restore_cache:
-          key: dependency-cache-{{ checksum "package-lock.json" }}
+          keys:
+            - dependency-cache-{{ checksum "package-lock.json" }}
+            # Fallback to most recent cache
+            - dependency-cache-
       - run:
           name: install-npm-packages
           command: npm ci
@@ -36,7 +39,10 @@ jobs:
           command: sudo npm install -g npm
       - run: npm --version
       - restore_cache:
-          key: dependency-cache-{{ checksum "package-lock.json" }}
+          keys:
+            - dependency-cache-{{ checksum "package-lock.json" }}
+            # Fallback to most recent cache
+            - dependency-cache-
       - run:
           name: install-npm-packages
           command: npm ci
