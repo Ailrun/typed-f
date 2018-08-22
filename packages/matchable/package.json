@@ -1,6 +1,6 @@
 {
   "name": "@typed-f/matchable",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "keywords": [
     "Functor",
     "TypeScript",
@@ -27,7 +27,7 @@
     "test:lint": "tslint -p ."
   },
   "dependencies": {
-    "@typed-f/function": "^0.1.0"
+    "@typed-f/function": "^0.2.0"
   },
   "devDependencies": {
     "@types/jest": "^23.3.1",

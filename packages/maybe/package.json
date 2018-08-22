@@ -1,6 +1,6 @@
 {
   "name": "@typed-f/maybe",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "keywords": [
     "Maybe",
     "Option",
@@ -33,11 +33,11 @@
     "test:lint:tests": "tslint -p ./tests -c ./tests/tslint.json -t codeFrame"
   },
   "dependencies": {
-    "@typed-f/function": "^0.1.0",
-    "@typed-f/matchable": "^0.1.0",
-    "@typed-f/monad": "^0.1.0",
-    "@typed-f/setoid": "^0.1.0",
-    "@typed-f/tagged": "^0.1.0"
+    "@typed-f/function": "^0.2.0",
+    "@typed-f/matchable": "^0.2.0",
+    "@typed-f/monad": "^0.2.0",
+    "@typed-f/setoid": "^0.2.0",
+    "@typed-f/tagged": "^0.2.0"
   },
   "devDependencies": {
     "@types/jest": "^23.3.1",
