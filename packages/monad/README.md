@@ -2,7 +2,7 @@
 
 [![NPM Version](https://img.shields.io/npm/v/@typed-f/monad/latest.svg?logo=npm&label=latest&colorB=blue)][monad-npm] [![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser/master.svg?logo=circleci)](https://circleci.com/gh/Ailrun/typed-f/tree/master) [![Known Vulnerabilities](https://snyk.io/test/github/Ailrun/typed-f/badge.svg?targetFile=packages%2Fmonad%2Fpackage.json)](https://snyk.io/test/github/Ailrun/typed-f?targetFile=packages%2Fmonad%2Fpackage.json)
 
-monad for [Typed-f](repo-github)
+monad for [Typed-F](repo-github)
 
 [repo-github]: https://github.com/Ailrun/typed-f
 [releases-github]: https://github.com/Ailrun/typed-f/releases
