@@ -133,7 +133,7 @@ export class Just<T> extends BaseMaybe<T> {
     if (typeof this._value === 'object' &&
         this._value != undefined &&
         typeof (this._value as any).equals === 'function') {
-      return (this._value as any).equals(other.value);
+      return Boolean((this._value as any).equals(other.value));
     }
 
     return this._value === other._value;
