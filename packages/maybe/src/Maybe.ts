@@ -169,8 +169,8 @@ export namespace Maybe {
   }
   export const of = unit;
 
+  export function from(value?: null): Nothing<any>;
   export function from<T>(value: T): Just<T>;
-  export function from<T>(value?: null): Nothing<T>;
   export function from<T>(value?: T | null): Maybe<T> {
     if (value == undefined) {
       return new Nothing();
@@ -179,11 +179,7 @@ export namespace Maybe {
     return new Just(value);
   }
 
-  export function maybe<T>(value: T): Just<T>;
-  export function maybe<T>(value?: null): Nothing<T>;
-  export function maybe<T>(value?: T | null): Maybe<T> {
-    return from<T>(value as any);
-  }
+  export const maybe = from;
 
   export function sequenceObject<O extends object>(
     obj: { [K in keyof O]: Maybe<O[K]> },
