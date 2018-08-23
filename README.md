@@ -11,6 +11,8 @@
 Well typed FP utilities for TypeScript
 
 ## Packages For Users
+- [**@typed-f/lens**][lens-github]  
+  [![NPM Version](https://img.shields.io/npm/v/@typed-f/lens/latest.svg?logo=npm&label=latest&colorB=blue)][lens-npm] [![Known Vulnerabilities](https://snyk.io/test/github/Ailrun/typed-f/badge.svg?targetFile=packages%2Flens%2Fpackage.json)](https://snyk.io/test/github/Ailrun/typed-f?targetFile=packages%2Flens%2Fpackage.json)
 - [**@typed-f/maybe**][maybe-github]  
   [![NPM Version](https://img.shields.io/npm/v/@typed-f/maybe/latest.svg?logo=npm&label=latest&colorB=blue)][maybe-npm] [![Known Vulnerabilities](https://snyk.io/test/github/Ailrun/typed-f/badge.svg?targetFile=packages%2Fmaybe%2Fpackage.json)](https://snyk.io/test/github/Ailrun/typed-f?targetFile=packages%2Fmaybe%2Fpackage.json)
 - [**@typed-f/either**][either-github]  
@@ -39,6 +41,7 @@ Well typed FP utilities for TypeScript
 [either-github]: https://github.com/Ailrun/typed-f/tree/master/packages/either
 [function-github]: https://github.com/Ailrun/typed-f/tree/master/packages/function
 [functor-github]: https://github.com/Ailrun/typed-f/tree/master/packages/functor
+[lens-github]: https://github.com/Ailrun/typed-f/tree/master/packages/lens
 [matchable-github]: https://github.com/Ailrun/typed-f/tree/master/packages/matchable
 [maybe-github]: https://github.com/Ailrun/typed-f/tree/master/packages/maybe
 [monad-github]: https://github.com/Ailrun/typed-f/tree/master/packages/monad
@@ -49,6 +52,7 @@ Well typed FP utilities for TypeScript
 [either-npm]: https://www.npmjs.com/package/@typed-f/either
 [function-npm]: https://www.npmjs.com/package/@typed-f/function
 [functor-npm]: https://www.npmjs.com/package/@typed-f/functor
+[lens-npm]: https://www.npmjs.com/package/@typed-f/lens
 [matchable-npm]: https://www.npmjs.com/package/@typed-f/matchable
 [maybe-npm]: https://www.npmjs.com/package/@typed-f/maybe
 [monad-npm]: https://www.npmjs.com/package/@typed-f/monad

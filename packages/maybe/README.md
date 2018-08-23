@@ -115,6 +115,7 @@ You can use these functions like `Maybe.<function name>`, for example, in case o
 [either-github]: https://github.com/Ailrun/typed-f/tree/master/packages/either
 [function-github]: https://github.com/Ailrun/typed-f/tree/master/packages/function
 [functor-github]: https://github.com/Ailrun/typed-f/tree/master/packages/functor
+[lens-github]: https://github.com/Ailrun/typed-f/tree/master/packages/lens
 [matchable-github]: https://github.com/Ailrun/typed-f/tree/master/packages/matchable
 [maybe-github]: https://github.com/Ailrun/typed-f/tree/master/packages/maybe
 [monad-github]: https://github.com/Ailrun/typed-f/tree/master/packages/monad
@@ -125,6 +126,7 @@ You can use these functions like `Maybe.<function name>`, for example, in case o
 [either-npm]: https://www.npmjs.com/package/@typed-f/either
 [function-npm]: https://www.npmjs.com/package/@typed-f/function
 [functor-npm]: https://www.npmjs.com/package/@typed-f/functor
+[lens-npm]: https://www.npmjs.com/package/@typed-f/lens
 [matchable-npm]: https://www.npmjs.com/package/@typed-f/matchable
 [maybe-npm]: https://www.npmjs.com/package/@typed-f/maybe
 [monad-npm]: https://www.npmjs.com/package/@typed-f/monad
