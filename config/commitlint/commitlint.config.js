@@ -29,6 +29,7 @@ module.exports = {
         'maybe',
         'tagged',
         'either',
+        'lens',
       ],
     ],
     'scope-empty': [
