@@ -37,12 +37,3 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### Features
 
 * **tagged:** add [@typed-f](https://github.com/typed-f)/tagged package ([#2](https://github.com/Ailrun/typed-f/issues/2)) ([91b914d](https://github.com/Ailrun/typed-f/commit/91b914d))
-
-
-
-
-
-<a name="0.0.1"></a>
-## 0.0.1 (2018-08-11)
-
-**Note:** Version bump only for package @typed-f/setoid
