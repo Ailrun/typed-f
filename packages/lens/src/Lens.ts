@@ -23,6 +23,10 @@ export class Lens<A, S, B = A, T = S> {
     return this._set;
   }
 
+  public map(): Fun<[S], Fun<[Fun<[A], B>], T>> {
+    return (s) => (f) => this._set(s)(f(this._get(s)));
+  }
+
   public compose<AA, BB = AA>(other: Lens<AA, A, BB, B>) {
     return new Lens<AA, S, BB, T>(
       (s: S) => other.get()(this._get(s)),
@@ -55,19 +59,9 @@ export class LensS<A, S> extends Lens<A, S> {
   }
 }
 
-function copy<T>(x: T): T {
-  if (Array.isArray(x)) {
-    return x.slice() as any;
-  }
-
-  if (typeof x === 'object' && x !== null) {
-    return {
-      ...x as any,
-    };
-  }
-
-  return x;
-}
+export type LensSProxy<A, S> = LensS<A, S> & {
+  [K in keyof A]: LensSProxy<A[K], S>;
+};
 
 export class LensGenerator<S> {
   public fromKey<K extends keyof S>(key: K): LensS<S[K], S> {
@@ -80,4 +74,76 @@ export class LensGenerator<S> {
       },
     );
   }
+
+  //tslint:disable: max-line-length
+  public fromKeys(
+    ...keys: []
+  ): LensS<S, S>;
+  public fromKeys<K0 extends keyof S>(
+    ...keys: [K0]
+  ): LensS<S[K0], S>;
+  public fromKeys<K0 extends keyof S, K1 extends keyof S[K0]>(
+    ...keys: [K0, K1]
+  ): LensS<S[K0][K1], S>;
+  public fromKeys<K0 extends keyof S, K1 extends keyof S[K0], K2 extends keyof S[K0][K1]>(
+    ...keys: [K0, K1, K2]
+  ): LensS<S[K0][K1][K2], S>;
+  public fromKeys<K0 extends keyof S, K1 extends keyof S[K0], K2 extends keyof S[K0][K1], K3 extends keyof S[K0][K1][K2]>(
+    ...keys: [K0, K1, K2, K3]
+  ): LensS<S[K0][K1][K2][K3], S>;
+  public fromKeys<K0 extends keyof S, K1 extends keyof S[K0], K2 extends keyof S[K0][K1], K3 extends keyof S[K0][K1][K2], K4 extends keyof S[K0][K1][K2][K3]>(
+    ...keys: [K0, K1, K2, K3, K4]
+  ): LensS<S[K0][K1][K2][K3][K4], S>;
+  public fromKeys<K0 extends keyof S, K1 extends keyof S[K0], K2 extends keyof S[K0][K1], K3 extends keyof S[K0][K1][K2], K4 extends keyof S[K0][K1][K2][K3], K5 extends keyof S[K0][K1][K2][K3][K4]>(
+    ...keys: [K0, K1, K2, K3, K4, K5]
+  ): LensS<S[K0][K1][K2][K3][K4][K5], S>;
+  public fromKeys<K0 extends keyof S, K1 extends keyof S[K0], K2 extends keyof S[K0][K1], K3 extends keyof S[K0][K1][K2], K4 extends keyof S[K0][K1][K2][K3], K5 extends keyof S[K0][K1][K2][K3][K4], K6 extends keyof S[K0][K1][K2][K3][K4][K5]>(
+    ...keys: [K0, K1, K2, K3, K4, K5, K6]
+  ): LensS<S[K0][K1][K2][K3][K4][K5][K6], S>;
+  public fromKeys<P>(
+    ...keys: any[]
+  ): LensS<P, S>;
+  //tslint:enable: max-line-length
+
+  public fromKeys(...keys: string[]): LensS<any, S> {
+    const rootLens: LensS<S, S> = new LensS(
+      (s: S) => s,
+      (_s: S) => (t: S) => t,
+    );
+
+    return keys.reduce<LensS<any, S>>((acc, key) => {
+      return acc.focusTo(key);
+    }, rootLens);
+  }
+
+  public byProxy(): LensSProxy<S, S> {
+    const rootLens: LensS<S, S> = new LensS(
+      (s: S) => s,
+      (_s: S) => (t: S) => t,
+    );
+
+    return new Proxy(rootLens, {
+      get(target, prop) {
+        if ((target as any)[prop] !== undefined) {
+          return (target as any)[prop];
+        }
+
+        return (target as LensS<any, S>).focusTo(prop);
+      },
+    }) as LensSProxy<S, S>;
+  }
+}
+
+function copy<T>(x: T): T {
+  if (Array.isArray(x)) {
+    return x.slice() as any;
+  }
+
+  if (typeof x === 'object' && x !== null) {
+    return {
+      ...x as any,
+    };
+  }
+
+  return x;
 }
