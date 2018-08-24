@@ -122,16 +122,20 @@ export class LensGenerator<S> {
       (_s: S) => (t: S) => t,
     );
 
-    return new Proxy(rootLens, {
-      get(target, prop) {
-        if ((target as any)[prop] !== undefined) {
-          return (target as any)[prop];
-        }
-
-        return (target as LensS<any, S>).focusTo(prop);
-      },
-    }) as LensSProxy<S, S>;
+    return proxyfy(rootLens);
   }
+}
+
+function proxyfy<A, S>(lens: LensS<A, S>): LensSProxy<A, S> {
+  return new Proxy(lens, {
+    get(target, prop) {
+      if ((target as any)[prop] !== undefined) {
+        return (target as any)[prop];
+      }
+
+      return proxyfy((target as LensS<any, S>).focusTo(prop));
+    },
+  }) as LensSProxy<A, S>;
 }
 
 function copy<T>(x: T): T {
