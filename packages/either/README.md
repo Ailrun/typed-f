@@ -18,24 +18,22 @@ npm install --save @typed-f/either
 npm i -S @typed-f/either
 ```
 
-## Description
-
-### Why do we need `Either` (Disjoint union type)?
+## Why do we need `Either` (Disjoint union type)?
 
 See [this document](https://github.com/Ailrun/typed-f/tree/master/docs/why-do-we-need-either.md).
 
-### APIs
+## APIs
 
 This package includes type definition for `Either` type, which is an union type of `Right` and `Left`.
 This package also includes their methods and some utility functions for them.
 
-#### Types
+### Types
 
 - `Either<L, R>`
 - `Right<L, R>`
 - `Left<L, R>`
 
-#### Methods only for `Either`
+### Methods only for `Either`
 
 - `isLeft(this: Either<L, R>): this is Left<L, R>`  
     Checks whether `this` is `Left` or not. You can use this with `if` statement like following.
@@ -65,7 +63,7 @@ This package also includes their methods and some utility functions for them.
 - `rightOrCompute(this: Either<L, R>, f: Fun<[L], R>): R`  
     Counterpart of `leftOrCompute`
 
-#### Implemented Typeclasses
+### Implemented Typeclasses
 
 Most of typeclass implementation of `Either` considers `Right` as a valid value container, and `Left` as an error value container.
 
@@ -96,7 +94,7 @@ Most of typeclass implementation of `Either` considers `Right` as a valid value 
     - `notEquals(other: Either<any, any>): boolean`
         Returns `true` if and only if `this.equals(other)` returns `false`.
         
-#### Utility Functions
+### Utility Functions
 
 You can use these functions like `Either.<function name>`, for example, in case of `map`, you can access it with `Either.map`.
 
