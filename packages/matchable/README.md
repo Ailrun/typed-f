@@ -1,6 +1,7 @@
 # @typed-f/matchable
 
 [![NPM Version](https://img.shields.io/npm/v/@typed-f/matchable/latest.svg?logo=npm&label=latest&colorB=blue)][matchable-npm] [![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser/master.svg?logo=circleci)](https://circleci.com/gh/Ailrun/typed-f/tree/master) [![Known Vulnerabilities](https://snyk.io/test/github/Ailrun/typed-f/badge.svg?targetFile=packages%2Fmatchable%2Fpackage.json)](https://snyk.io/test/github/Ailrun/typed-f?targetFile=packages%2Fmatchable%2Fpackage.json)
+[![Supported TypeScript Version](https://img.shields.io/badge/support-typescript%40%3E%3D3.0-007acc.svg)](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html)
 
 matchable for [Typed-F](repo-github)
 
