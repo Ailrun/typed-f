@@ -1,6 +1,6 @@
 {
   "name": "@typed-f/monad",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "keywords": [
     "Functor",
     "Applicative",
@@ -29,9 +29,9 @@
     "test:lint": "tslint -p ."
   },
   "dependencies": {
-    "@typed-f/applicative": "^0.3.3",
-    "@typed-f/function": "^0.3.3",
-    "@typed-f/tagged": "^0.3.3"
+    "@typed-f/applicative": "^0.3.4",
+    "@typed-f/function": "^0.3.4",
+    "@typed-f/tagged": "^0.3.4"
   },
   "devDependencies": {
     "@types/jest": "^23.3.1",

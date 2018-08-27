@@ -1,6 +1,6 @@
 {
   "name": "@typed-f/lens",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "keywords": [
     "Lens",
     "TypeScript",
@@ -27,7 +27,7 @@
     "test:lint": "tslint -p ."
   },
   "dependencies": {
-    "@typed-f/function": "^0.3.3"
+    "@typed-f/function": "^0.3.4"
   },
   "devDependencies": {
     "@types/jest": "^23.3.1",
