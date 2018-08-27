@@ -22,6 +22,7 @@
     "url": "git+https://github.com/Ailrun/typed-f.git"
   },
   "scripts": {
+    "preversion": "run-s clean build",
     "clean": "rimraf dist",
     "build": "tsc -p ./tsconfig.json",
     "watch": "tsc -w -p ./tsconfig.json",
