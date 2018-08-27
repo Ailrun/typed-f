@@ -1,6 +1,6 @@
 # Typed-F
 
-[![Join the Slack Channel](https://typed-f.now.sh/slack-badge.svg?style=for-the-badge&logo=slack)](https://typed-f.slack.com/)
+[![Join the Slack Channel](https://typed-f.now.sh/slack/badge.svg?style=for-the-badge&logo=slack)](https://typed-f.now.sh/slack/welcome)
 
 [![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser/master.svg?logo=circleci)](https://circleci.com/gh/Ailrun/typed-f/tree/master)
 [![GitHub License](https://img.shields.io/github/license/Ailrun/typed-f.svg)][repo-github]
