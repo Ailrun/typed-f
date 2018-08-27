@@ -60,7 +60,7 @@ export class LensS<A, S> extends Lens<A, S> {
 }
 
 export type LensSProxy<A, S> = LensS<A, S> & {
-  [K in keyof A]: LensSProxy<A[K], S>;
+  [K in keyof A]-?: LensSProxy<A[K], S>;
 };
 
 export class LensGenerator<S> {
