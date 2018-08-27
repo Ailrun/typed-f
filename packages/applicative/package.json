@@ -1,6 +1,6 @@
 {
   "name": "@typed-f/applicative",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "keywords": [
     "Functor",
     "Applicative",
@@ -28,9 +28,9 @@
     "test:lint": "tslint -p ."
   },
   "dependencies": {
-    "@typed-f/function": "^0.3.2",
-    "@typed-f/functor": "^0.3.2",
-    "@typed-f/tagged": "^0.3.2"
+    "@typed-f/function": "^0.3.3",
+    "@typed-f/functor": "^0.3.3",
+    "@typed-f/tagged": "^0.3.3"
   },
   "devDependencies": {
     "@types/jest": "^23.3.1",
