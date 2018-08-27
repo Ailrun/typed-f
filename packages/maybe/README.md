@@ -18,20 +18,18 @@ npm install --save @typed-f/maybe
 npm i -S @typed-f/maybe
 ```
 
-## Description
-
-### APIs
+## APIs
 
 This package includes type definition for `Maybe` type, which is an union type of `Just` and `Nothing`.
 This package also includes their methods and some utility functions for them.
 
-#### Types
+### Types
 
 - `Maybe<T>`
 - `Just<T>`
 - `Nothing<T>`
 
-#### Methods only for `Maybe`
+### Methods only for `Maybe`
 
 - `isJust(this: Maybe<T>): this is Just<T>`
     Checks whether `this` is `Just` or not. You can use this with `if` statement like following code.
@@ -55,7 +53,7 @@ This package also includes their methods and some utility functions for them.
     If `this` is `Just`, this function returns the inner value of `this`.
     If not, this invoke `f` with inner value of current `this`, and return the result.
 
-#### Implemented Typeclasses
+### Implemented Typeclasses
 
 - [Monad][monad-github]
     - `bind<U>(this: Maybe<T>, f: Fun<[T], Maybe<U>>): Maybe<U>`
@@ -84,7 +82,7 @@ This package also includes their methods and some utility functions for them.
     - `notEquals(other: Maybe<any>): boolean`
         Returns `true` if and only if `this.equals(other)` returns `false`.
         
-#### Utility Functions
+### Utility Functions
 
 You can use these functions like `Maybe.<function name>`, for example, in case of `map`, you can access it with `Maybe.map`.
 
