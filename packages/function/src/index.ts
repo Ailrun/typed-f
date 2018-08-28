@@ -6,3 +6,4 @@ export * from './id';
 export * from './compose';
 export * from './pipe';
 export * from './curry';
+export * from './flip';
