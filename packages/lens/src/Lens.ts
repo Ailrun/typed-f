@@ -51,9 +51,17 @@ export class LensS<A, S> extends Lens<A, S> {
     return new LensS(
       (s: S) => this._get(s)[key],
       (s: S) => (n: A[K]) => {
-        const innerRes = copy(this._get(s));
-        innerRes[key] = n;
-        return this._set(s)(innerRes);
+        const part = this._get(s);
+
+        if (part === undefined) {
+          return this._set(s)({
+            [key]: n,
+          } as any);
+        }
+
+        const newPart = copy(part);
+        newPart[key] = n;
+        return this._set(s)(newPart);
       },
     );
   }
@@ -68,6 +76,12 @@ export class LensGenerator<S> {
     return new LensS(
       (s: S) => s[key],
       (s: S) => (b: S[K]) => {
+        if (s === undefined) {
+          return {
+            [key]: b,
+          } as any;
+        }
+
         const res = copy(s);
         res[key] = b;
         return res;
