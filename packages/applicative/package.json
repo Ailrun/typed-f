@@ -1,6 +1,6 @@
 {
   "name": "@typed-f/applicative",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "keywords": [
     "Functor",
     "Applicative",
@@ -29,8 +29,8 @@
   },
   "dependencies": {
     "@typed-f/function": "^0.3.4",
-    "@typed-f/functor": "^0.3.4",
-    "@typed-f/tagged": "^0.3.4"
+    "@typed-f/functor": "^0.3.5",
+    "@typed-f/tagged": "^0.3.5"
   },
   "devDependencies": {
     "@types/jest": "^23.3.1",

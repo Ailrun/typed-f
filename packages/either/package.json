@@ -1,6 +1,6 @@
 {
   "name": "@typed-f/either",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "keywords": [
     "Either",
     "Choice",
@@ -34,10 +34,10 @@
   },
   "dependencies": {
     "@typed-f/function": "^0.3.4",
-    "@typed-f/matchable": "^0.3.4",
-    "@typed-f/monad": "^0.3.4",
-    "@typed-f/setoid": "^0.3.4",
-    "@typed-f/tagged": "^0.3.4"
+    "@typed-f/matchable": "^0.3.5",
+    "@typed-f/monad": "^0.3.5",
+    "@typed-f/setoid": "^0.3.5",
+    "@typed-f/tagged": "^0.3.5"
   },
   "devDependencies": {
     "@types/jest": "^23.3.1",

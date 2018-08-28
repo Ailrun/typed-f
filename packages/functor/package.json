@@ -1,6 +1,6 @@
 {
   "name": "@typed-f/functor",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "keywords": [
     "Functor",
     "TypeScript",
@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@typed-f/function": "^0.3.4",
-    "@typed-f/tagged": "^0.3.4"
+    "@typed-f/tagged": "^0.3.5"
   },
   "devDependencies": {
     "@types/jest": "^23.3.1",
