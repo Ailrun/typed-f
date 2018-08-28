@@ -24,6 +24,9 @@ dist/
 # Dependency directories
 node_modules/
 
+# Environment variables for user-local config
+.env*
+
 # Optional npm cache directory
 .npm
 
