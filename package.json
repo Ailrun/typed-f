@@ -18,6 +18,7 @@
     "url": "git+https://github.com/Ailrun/typed-f.git"
   },
   "scripts": {
+    "preversion": "run-s clean build",
     "bootstrap": "lerna bootstrap --hoist",
     "clean": "lerna run --parallel clean --",
     "build": "lerna run build --",
