@@ -169,8 +169,6 @@ export namespace Maybe {
   }
   export const of = unit;
 
-  export function from(value?: null): Nothing<any>;
-  export function from<T>(value: T): Just<T>;
   export function from<T>(value?: T | null): Maybe<T> {
     if (value == undefined) {
       return new Nothing();
