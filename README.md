@@ -7,6 +7,7 @@
 [![GitHub tag](https://img.shields.io/github/tag/Ailrun/typed-f.svg?colorB=blue)][releases-github]
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 [![Supported TypeScript Version](https://img.shields.io/badge/support-typescript%40%3E%3D3.0-007acc.svg)](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
 Well typed FP utilities for TypeScript
 
