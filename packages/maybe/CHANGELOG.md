@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.6"></a>
+## [0.3.6](https://github.com/Ailrun/typed-f/compare/v0.3.5...v0.3.6) (2018-08-29)
+
+
+### Bug Fixes
+
+* **maybe:** fix type of Maybe.from ([#47](https://github.com/Ailrun/typed-f/issues/47)) ([07037fb](https://github.com/Ailrun/typed-f/commit/07037fb))
+
+
+
+
+
 <a name="0.3.5"></a>
 ## [0.3.5](https://github.com/Ailrun/typed-f/compare/v0.3.4...v0.3.5) (2018-08-28)
 
