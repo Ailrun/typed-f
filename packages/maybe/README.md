@@ -6,6 +6,9 @@
 [![Supported TypeScript Version][repo-supported-typescript-badge]][supported-typescript]
 [![PRs Welcome][prs-welcome-badge]][prs-welcome]
 
+[![Watch on GitHub][repo-github-watch-badge]][repo-github-watch]
+[![Star on GitHub][repo-github-star-badge]][repo-github-star]
+
 Partial type for [Typed-F](repo-github)
 
 ## Installation
@@ -127,9 +130,13 @@ You can use these functions like `Maybe.<function name>`, for example, in case o
 
 [repo-github]: https://github.com/Ailrun/typed-f
 [repo-github-releases]: https://github.com/Ailrun/typed-f/releases
+[repo-github-watch]: https://github.com/Ailrun/typed-f/watchers
+[repo-github-star]: https://github.com/Ailrun/typed-f/stargazers
 
 [repo-github-license-badge]: https://img.shields.io/github/license/Ailrun/typed-f.svg
 [repo-github-tag-badge]: https://img.shields.io/github/tag/Ailrun/typed-f.svg?colorB=blue
+[repo-github-watch-badge]: https://img.shields.io/github/watchers/Ailrun/typed-f.svg?style=social
+[repo-github-star-badge]: https://img.shields.io/github/stars/Ailrun/typed-f.svg?style=social
 
 [applicative-github]: https://github.com/Ailrun/typed-f/tree/master/packages/applicative
 [either-github]: https://github.com/Ailrun/typed-f/tree/master/packages/either
