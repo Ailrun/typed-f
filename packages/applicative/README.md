@@ -4,6 +4,7 @@
 [![CircleCI][repo-circleci-badge]][repo-circleci]
 [![Known Vulnerabilities][applicative-snyk-badge]][applicative-snyk]
 [![Supported TypeScript Version][repo-supported-typescript-badge]][supported-typescript]
+[![PRs Welcome][prs-welcome-badge]][prs-welcome]
 
 Applicative implementation for [Typed-F][repo-github]
 

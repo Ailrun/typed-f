@@ -4,6 +4,7 @@
 [![CircleCI][repo-circleci-badge]][repo-circleci]
 [![Known Vulnerabilities][functor-snyk-badge]][functor-snyk]
 [![Supported TypeScript Version][repo-supported-typescript-badge]][supported-typescript]
+[![PRs Welcome][prs-welcome-badge]][prs-welcome]
 
 functor for [Typed-F](repo-github)
 

@@ -4,6 +4,7 @@
 [![CircleCI][repo-circleci-badge]][repo-circleci]
 [![Known Vulnerabilities][tagged-snyk-badge]][tagged-snyk]
 [![Supported TypeScript Version][repo-supported-typescript-badge]][supported-typescript]
+[![PRs Welcome][prs-welcome-badge]][prs-welcome]
 
 tagged for [Typed-F](repo-github)
 

@@ -4,6 +4,7 @@
 [![CircleCI][repo-circleci-badge]][repo-circleci]
 [![Known Vulnerabilities][matchable-snyk-badge]][matchable-snyk]
 [![Supported TypeScript Version][repo-supported-typescript-badge]][supported-typescript]
+[![PRs Welcome][prs-welcome-badge]][prs-welcome]
 
 matchable for [Typed-F](repo-github)
 

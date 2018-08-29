@@ -4,6 +4,7 @@
 [![CircleCI][repo-circleci-badge]][repo-circleci]
 [![Known Vulnerabilities][either-snyk-badge]][either-snyk]
 [![Supported TypeScript Version][repo-supported-typescript-badge]][supported-typescript]
+[![PRs Welcome][prs-welcome-badge]][prs-welcome]
 
 Disjoint union type for [Typed-F](repo-github)
 
