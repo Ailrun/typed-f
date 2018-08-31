@@ -1,6 +1,6 @@
 # @typed-f/lens
 [![NPM Version][lens-npm-version-badge]][lens-npm]
-[![CircleCI][repo-circleci-badge]][repo-circleci]
+[repo-circleci-badge]: https://img.shields.io/circleci/project/github/Ailrun/typed-f/master.svg?logo=circleci
 [![Known Vulnerabilities][lens-snyk-badge]][lens-snyk]
 [![Supported TypeScript Version][repo-supported-typescript-badge]][supported-typescript]
 [![PRs Welcome][prs-welcome-badge]][prs-welcome]
@@ -266,7 +266,7 @@ nameProxy.set()(obj)('123');
 [repo-slack]: https://typed-f.now.sh/slack/welcome
 
 [repo-circleci]: https://circleci.com/gh/Ailrun/typed-f/tree/master
-[repo-circleci-badge]: https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser/master.svg?logo=circleci
+[repo-circleci-badge]: https://img.shields.io/circleci/project/github/Ailrun/typed-f/master.svg?logo=circleci
 
 [repo-github]: https://github.com/Ailrun/typed-f
 [repo-github-releases]: https://github.com/Ailrun/typed-f/releases

@@ -1,7 +1,7 @@
 # @typed-f/maybe
 
 [![NPM Version][maybe-npm-version-badge]][maybe-npm]
-[![CircleCI][repo-circleci-badge]][repo-circleci]
+[repo-circleci-badge]: https://img.shields.io/circleci/project/github/Ailrun/typed-f/master.svg?logo=circleci
 [![Known Vulnerabilities][maybe-snyk-badge]][maybe-snyk]
 [![Supported TypeScript Version][repo-supported-typescript-badge]][supported-typescript]
 [![PRs Welcome][prs-welcome-badge]][prs-welcome]
@@ -126,7 +126,7 @@ You can use these functions like `Maybe.<function name>`, for example, in case o
 [repo-slack]: https://typed-f.now.sh/slack/welcome
 
 [repo-circleci]: https://circleci.com/gh/Ailrun/typed-f/tree/master
-[repo-circleci-badge]: https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser/master.svg?logo=circleci
+[repo-circleci-badge]: https://img.shields.io/circleci/project/github/Ailrun/typed-f/master.svg?logo=circleci
 
 [repo-github]: https://github.com/Ailrun/typed-f
 [repo-github-releases]: https://github.com/Ailrun/typed-f/releases
