@@ -240,7 +240,7 @@ Construct a `LensS` to access `state[keys[0]][keys[1]]...` and set the value of 
 ```typescript
 byProxy(): LensSProxy<S, S>
 ```
-*Warning: this API uses ES6 [`Proxy`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy). Be careful about [browser compatibility](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy#Browser_compatibility)! You may consider using [this polyfill](https://github.com/GoogleChrome/proxy-polyfill#usage).*
+*Warning: this API uses ES6 [`Proxy`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy). Be careful about [browser compatibility](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy#Browser_compatibility)! [This polyfill](https://github.com/GoogleChrome/proxy-polyfill#usage) also does not work for this since this API uses dynamic properties.*
 
 Returns a `Proxy` object that allow you to make lens for any depth of properties. For example, when you have `obj: Obj` (`Obj` type from the example of `makeInner`), you can use
 ```typescript
