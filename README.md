@@ -1,6 +1,7 @@
 # Typed-F
 
 [![Join the Slack Channel][repo-slack-badge]][repo-slack]
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FAilrun%2Ftyped-f.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FAilrun%2Ftyped-f?ref=badge_shield)
 
 [![CircleCI][repo-circleci-badge]][repo-circleci]
 [![GitHub License][repo-github-license-badge]][repo-github]
@@ -127,3 +128,7 @@ Well typed FP utilities for TypeScript
 [monad-snyk]: https://snyk.io/test/github/Ailrun/typed-f?targetFile=packages%2Flens%2Fpackage.json
 [setoid-snyk]: https://snyk.io/test/github/Ailrun/typed-f?targetFile=packages%2Flens%2Fpackage.json
 [tagged-snyk]: https://snyk.io/test/github/Ailrun/typed-f?targetFile=packages%2Flens%2Fpackage.json
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FAilrun%2Ftyped-f.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FAilrun%2Ftyped-f?ref=badge_large)
