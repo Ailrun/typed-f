@@ -5,6 +5,10 @@ import { Fun } from '@typed-f/function';
 import { MatchPatterns, Matchable } from '@typed-f/matchable';
 import { Monad2 } from '@typed-f/monad';
 import { Setoid2 } from '@typed-f/setoid';
+/**
+ * Import to declare module
+ */
+import { } from '@typed-f/tagged';
 
 type EitherTag = '__typed_f__Either__';
 const EitherTag: EitherTag = '__typed_f__Either__';

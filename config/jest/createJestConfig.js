@@ -2,7 +2,7 @@ module.exports = ({ name }) => ({
   errorOnDeprecated: true,
   globals: {
     'ts-jest': {
-      tsConfigFile: './tsconfig.json',
+      tsConfig: './tests/tsconfig.json',
     },
   },
   moduleFileExtensions: [

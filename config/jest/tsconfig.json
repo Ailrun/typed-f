@@ -27,7 +27,7 @@
     "strictPropertyInitialization": true,
     "strictNullChecks": true,
     "target": "ES6",
-    "types": ["node"]
+    "types": ["node", "jest"]
   },
   "include": [
     "../../src"
