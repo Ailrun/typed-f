@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.7](https://github.com/Ailrun/typed-f/compare/v0.3.6...v0.3.7) (2019-05-02)
+
+**Note:** Version bump only for package @typed-f/functor
+
+
+
+
+
 <a name="0.3.5"></a>
 ## [0.3.5](https://github.com/Ailrun/typed-f/compare/v0.3.4...v0.3.5) (2018-08-28)
 
