@@ -1,0 +1,10 @@
+{
+  "extends": "../../../config/tsconfig/tsconfig.test.json",
+  "compilerOptions": {
+    "baseUrl": "../",
+    "paths": {
+      "@typed-f/lens": ["./src"],
+      "@typed-f/lens/dist/*": ["./src/*"]
+    }
+  }
+}

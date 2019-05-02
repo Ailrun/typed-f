@@ -1,0 +1,19 @@
+{
+  "extends": "../../../config/tslint/tslint.test.json",
+  "linterOptions": {
+    "exclude": [
+      "../src/**/*"
+    ]
+  },
+  "rules": {
+    "no-implicit-dependencies": {
+      "severity": "error",
+      "options": [
+        "dev",
+        [
+          "@typed-f/lens"
+        ]
+      ]
+    }
+  }
+}
