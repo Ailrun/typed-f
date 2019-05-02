@@ -2,7 +2,6 @@
  * Copyright 2018-present Junyoung Clare Jang
  */
 import { Fun } from './';
-
 import { _createCurried } from './_createCurried';
 
 //tslint:disable-next-line: ban-types

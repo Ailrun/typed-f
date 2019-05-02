@@ -1,6 +1,9 @@
 {
   "version": "0.3.6",
   "command": {
+    "bootstrap": {
+      "hoist": false
+    },
     "publish": {
       "allowBranch": "master",
       "conventionalCommits": true,

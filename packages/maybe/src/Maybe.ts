@@ -5,6 +5,10 @@ import { Fun } from '@typed-f/function';
 import { MatchPatterns, Matchable } from '@typed-f/matchable';
 import { Monad1 } from '@typed-f/monad';
 import { Setoid1 } from '@typed-f/setoid';
+/**
+ * Import to declare module
+ */
+import { } from '@typed-f/tagged';
 
 type MaybeTag = '__typed_f__Maybe__';
 const MaybeTag: MaybeTag = '__typed_f__Maybe__';
