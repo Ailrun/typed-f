@@ -49,7 +49,7 @@ Well typed FP utilities for TypeScript
   [![Known Vulnerabilities][tagged-snyk-badge]][tagged-snyk]
 
 [lerna-badge]: https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg
-[lerna]: https://lernajs.io/
+[lerna]: https://lerna.js.org/
 
 [prs-welcome-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
 [prs-welcome]: http://makeapullrequest.com
