@@ -2,10 +2,10 @@ import { flip } from '@typed-f/function/dist/flip';
 
 describe('flip', () => {
   it('should return a function that takes one argument two times when first argument is a function that takes one argument two times', () => {
-    const test1 = (a: string) => (b: number) => a + b;
+    const test1 = (a: number) => (b: number) => a + b;
     expect(typeof flip(test1)).toBe('function');
     expect(typeof flip(test1)(5)).toBe('function');
-    expect(flip(test1)(5)('abc')).toBe('abc5');
+    expect(flip(test1)(5)(1)).toBe(6);
 
     const test2 = (x: { [key: string]: number }) => (key: string) => x[key];
     expect(typeof flip(test2)).toBe('function');
