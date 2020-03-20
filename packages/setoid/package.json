@@ -1,6 +1,6 @@
 {
   "name": "@typed-f/setoid",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "keywords": [
     "Setoid",
     "Equality",
@@ -28,7 +28,7 @@
     "test:lint": "tslint -p ."
   },
   "dependencies": {
-    "@typed-f/tagged": "^0.3.7"
+    "@typed-f/tagged": "^0.3.8"
   },
   "devDependencies": {
     "@types/node": "11.13.8",

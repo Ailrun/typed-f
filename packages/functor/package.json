@@ -1,6 +1,6 @@
 {
   "name": "@typed-f/functor",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "keywords": [
     "Functor",
     "TypeScript",
@@ -27,8 +27,8 @@
     "test:lint": "tslint -p ."
   },
   "dependencies": {
-    "@typed-f/function": "^0.3.7",
-    "@typed-f/tagged": "^0.3.7"
+    "@typed-f/function": "^0.3.8",
+    "@typed-f/tagged": "^0.3.8"
   },
   "devDependencies": {
     "@types/node": "11.13.8",

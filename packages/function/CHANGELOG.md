@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.8](https://github.com/Ailrun/typed-f/compare/v0.3.7...v0.3.8) (2020-03-20)
+
+
+### Features
+
+* **function:** add simple flip ([#43](https://github.com/Ailrun/typed-f/issues/43)) ([1f319ec](https://github.com/Ailrun/typed-f/commit/1f319ece3827b90b249ce0bc1dcfa7c2a1472ddb))
+
+
+
+
+
 ## [0.3.7](https://github.com/Ailrun/typed-f/compare/v0.3.6...v0.3.7) (2019-05-02)
 
 **Note:** Version bump only for package @typed-f/function
