@@ -29,9 +29,9 @@
   },
   "devDependencies": {
     "@types/node": "11.13.8",
-    "rimraf": "2.6.3",
-    "tslint": "5.16.0",
-    "typescript": "3.4.5"
+    "rimraf": "3.0.2",
+    "tslint": "6.1.0",
+    "typescript": "3.8.3"
   },
   "publishConfig": {
     "access": "public"
