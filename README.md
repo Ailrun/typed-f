@@ -1,7 +1,5 @@
 # Typed-F
 
-[![Join the Slack Channel][repo-slack-badge]][repo-slack]
-
 [![CircleCI][repo-circleci-badge]][repo-circleci]
 [![GitHub License][repo-github-license-badge]][repo-github]
 [![GitHub tag][repo-github-tag-badge]][repo-github-releases]
@@ -56,9 +54,6 @@ Well typed FP utilities for TypeScript
 
 [repo-supported-typescript-badge]: https://img.shields.io/badge/support-typescript%40%3E%3D3.0-007acc.svg
 [supported-typescript]: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html
-
-[repo-slack-badge]: https://typed-f.now.sh/slack/badge.svg?style=for-the-badge&logo=slack
-[repo-slack]: https://typed-f.now.sh/slack/welcome
 
 [repo-circleci]: https://circleci.com/gh/Ailrun/typed-f/tree/master
 [repo-circleci-badge]: https://img.shields.io/circleci/project/github/Ailrun/typed-f/master.svg?logo=circleci
