@@ -32,13 +32,13 @@
     "test:lint:tests": "tslint -p ./tests -c ./tests/tslint.json -t codeFrame"
   },
   "devDependencies": {
-    "@types/jest": "25.1.4",
-    "@types/node": "11.13.8",
-    "jest": "25.1.0",
+    "@types/jest": "25.2.1",
+    "@types/node": "13.11.0",
+    "jest": "25.2.7",
     "npm-run-all": "4.1.5",
     "rimraf": "3.0.2",
-    "ts-jest": "25.2.1",
-    "tslint": "6.1.0",
+    "ts-jest": "25.3.1",
+    "tslint": "6.1.1",
     "typescript": "3.8.3"
   },
   "publishConfig": {
